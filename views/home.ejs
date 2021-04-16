@@ -1,0 +1,18 @@
+<%-include("partials/header.ejs");-%>
+<form class="" action="/" method="post">
+<div class="hero">
+  <div class="form-box">
+  <div class="circle" id="red" onclick="shreya('q!')"></div>
+  <div class="circle" id="green" onclick="shreya('w%')"></div>
+  <div class="circle" id="blue" onclick="shreya('$s')"></div>
+  <input type="password" id="RGB-password" class="input-field" placeholder="password" name="password" required></input>
+
+<button id="enter-btn" formtarget="">Enter</button>
+</div>
+</div></form>
+<script type="text/javascript">
+    function shreya(x){
+        document.getElementById("RGB-password").value+=x;}
+
+</script>
+<%-include("partials/footer");-%>
